@@ -1,17 +1,61 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Dice roll</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<h2>Lancé de dé individuel</h2>
+<br /><hr /><br />
+<br />
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-4 col-lg-2">
+        <button onclick="d4Roll()">
+            <img src="../../assets/imgs/d4.png" />
+        </button>
+    </div>
+    <div class="col-4 col-lg-2">
+        <button onclick="d6Roll()">
+            <img src="../../assets/imgs/d6.png" />
+        </button>
+    </div>
+    <div class="col-4 col-lg-2">
+        <button onclick="d8Roll()">
+            <img src="../../assets/imgs/d8.png" />
+        </button>
+    </div>
+    <div class="col-4 col-lg-2">
+        <button onclick="d10Roll()">
+            <img src="../../assets/imgs/d10.png" />
+        </button>
+    </div>
+    <div class="col-4 col-lg-2">
+        <button onclick="d12Roll()">
+            <img src="../../assets/imgs/d12.png" />
+        </button>
+    </div>
+    <div class="col-4 col-lg-2">
+        <button onclick="d20Roll()">
+            <img src="../../assets/imgs/d20.png" />
+        </button>
+    </div>
+    <div class="col-4 col-lg-2">
+        <button onclick="d100Roll()">
+            <img src="../../assets/imgs/d100.png" />
+        </button>
+    </div>
+  </div>
+</div>
+
+<div class="result">
+    <div id="display"></div>
+</div>
+
 </ion-content>
+
+
+
+

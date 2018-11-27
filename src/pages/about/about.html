@@ -1,11 +1,64 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Pool of dices
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+
+<h2>~ ~ Choix du pool de dés ~ ~</h2>
+
+<form>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4">
+        <label for="txtNbD4"><img src="../../assets/imgs/d4.png" /></label>
+        <input type="number" maxlength="2" size="2" id="txtNbD4" placeholder="D4" />
+      </div>
+
+      <div class="col-4">
+        <label for="txtNbD6"><img src="../../assets/imgs/d6.png" /></label>
+        <input type="number" maxlength="2" size="2" id="txtNbD6" placeholder="D6" />
+      </div>
+
+      <div class="col-4">
+        <label for="txtNbD8"><img src="../../assets/imgs/d8.png" /></label>
+        <input type="number" maxlength="2" size="2" id="txtNbD8" placeholder="D8" />
+      </div>
+
+      <div class="col-4">
+        <input type="number" maxlength="2" size="2" id="txtNbD10" placeholder="D10" />
+        <label for="txtNbD10"><img src="../../assets/imgs/d10.png" /></label>
+      </div>
+
+      <div class="col-4">
+        <input type="number" maxlength="2" size="2" id="txtNbD12" placeholder="D12" />
+        <label for="txtNbD12"><img src="../../assets/imgs/d12.png" /></label>
+      </div>
+
+      <div class="col">
+        <input type="number" maxlength="2" size="2" id="txtNbD20" placeholder="D20" />
+        <label for="txtNbD20"><img src="../../assets/imgs/d20.png" /></label>
+      </div>
+      
+    </div>
+
+    <div class="col-6 col-md-4">
+      <label for="txtNbD100"><img src="../../assets/imgs/d100.png" /></label>
+      <input type="number" maxlength="2" size="2" id="txtNbD100" placeholder="D100" />
+    </div>
+
+    <div class="col-sm-12">
+      <button type="button" class="btn btn-warning btn-block" onclick="diceRoll()" id="roll">Lancer les dés</button>
+    </div>
+  </div>
+
+  <div class="result">
+    <div id="displ"></div>
+  </div>
+
+</form>
 
 </ion-content>
